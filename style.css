@@ -1,0 +1,189 @@
+*{
+        margin: 0;
+        padding: 0;
+}
+#gamearea{
+        display: none;
+        background: url("Stape02.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        /*display: flex;*/
+        min-height: 100vh;
+        background-color: #000;
+}
+#gamearea #game{
+        width: 320px;
+        max-width: 100%;
+        height: 550px;
+        border: 1px solid black;
+        margin: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-left: 4px dashed white;
+        border-right: 4px dashed white;
+}
+#game video{
+        position: absolute;
+        object-fit: cover;
+        width: 310px;
+        height: 540px;
+        pointer-events: none;
+}
+#result_sec {
+        display: none;
+        background: url("bg_str.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        /*display: flex;*/
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #000;
+}
+#result_sec #result{
+        background: #fff;
+        padding: 30px;
+        margin: 10px;
+        border: none;
+        border-radius: 16px;
+        max-width: 450px;
+        width: 100%;
+        font-family: verdana;
+        box-shadow: 0 0 128px 0 rgba(254, 254, 254, 0.2);
+}
+#result h1{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+        padding: 5px;
+        color: #F43452;
+}
+#result h3{
+        font-size: 18px;
+        font-weight: 300;
+        padding: 5px;
+        text-align: center;
+}
+#result span{
+        font-weight: 700;
+        color: #03C61E;
+}
+#result button{
+        background: #DA0929;
+        border: none;
+        border-radius: 5px;
+        padding: 12px;
+        font-weight: 500;
+        color: #fff;
+        margin: 10px;
+}
+#start_game_sec {
+        background: url("bg_str.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #000;
+}
+#start_game_sec #start_game_div{
+        background: #fff;
+        padding: 30px;
+        margin: 10px;
+        border: none;
+        border-radius: 16px;
+        max-width: 450px;
+        width: 100%;
+        font-family: verdana;
+        overflow-y: scroll;
+        height: 430px;
+        box-shadow: 0 0 128px 0 rgba(254, 254, 254, 0.2);
+}
+#start_game_div h2{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+        padding: 5px;
+        color: #000000;
+}
+#start_game_div p{
+        font-size: 17px;
+        padding: 3px;
+        color: #63646F;
+        margin: 5px;
+}
+#start_game_div button{
+        background: #03C61E;
+        border: none;
+        border-radius: 5px;
+        padding: 12px;
+        font-weight: 500;
+        color: #fff;
+        margin: 10px;
+}
+#start_game_div button:hover{
+        box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.3);
+}
+#start_game_div ul{
+        margin: 11px;
+        padding: 5px;
+}
+#character{
+        width: 100px;
+        height: 100px;
+        background: url("car01.png");
+        background-color: transparent;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        top: 300px;
+        left: 100px;
+}
+#block{
+        height: 100px;
+        width: 100px;
+        background: url("ob01.png");
+        background-size: cover;
+        background-position: center center;
+        background-color: transparent;
+        position: relative;
+        animation: slide 1.4s infinite;
+}
+@keyframes slide{
+        0%{top:-100px;}
+        100%{top:540px;}
+}
+/*#gamearea #white{
+        width: 100%;
+        height: 110px;
+        position: absolute;
+        top: 500px;
+        background: white;
+        z-index: 10000;
+}*/
+#left,#right{
+        width: 50%;
+        position: absolute;
+        height: 550px;
+}
+#right{
+        left: 50%;
+}
+#cscore{
+        background: transparent;
+        color: #fff;
+        text-align: right;
+        font-size: 22px;
+        font-family: Verdana;
+        font-weight: 600;
+        margin: 8px;
+        position: absolute;
+        left: 180px;
+}

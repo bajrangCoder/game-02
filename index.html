@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Game By Raunak Raj</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <section id="start_game_sec">
+                <div id="start_game_div">
+                        <h2>indRacer</h2>
+                        <p>This is a simple game developed by <strong>Raunak Raj.</strong></p>
+                        <center><button onclick="start_game()">Start game</button></center>
+                        <h3>Instructions For Playing: - </h3>
+                        <ul>
+                                <li>In this game there is car and road blocker.</li>
+                                <li>You have to escape the car from the blockers. To gain score.</li>
+                                <li>For moving your car: just click the side which side you want to move.</li>
+                                <li>If your car crash with the blocker, Then your game is over.</li>
+                                <li>For big screen user zoom the racing panel and use arrow key to move.</li>
+                        </ul>
+                </div>
+        </section>
+        <section id="gamearea">
+        <div id="game">
+                <video src="road.mp4" autoplay muted loop></video>
+                <div id="cscore">Score : <span id="p_score">0</span></div>
+                <div id="left"></div>
+                <div id="right"></div>
+                <div id="block"></div>
+                <div id="character"></div>
+        </div>
+        </section>
+        <section id="result_sec">
+                <div id="result">
+                        <h1>Game Over</h1>
+                        <h3>Your Total score is <span id="score">0</span>.</h3>
+                        <center><button onclick="play_again()">Play Again</button></center>
+                </div>
+        </section>
+        <script src="main.js"></script>
+</body>
+
+</html>
